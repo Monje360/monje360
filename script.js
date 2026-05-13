@@ -79,6 +79,34 @@
     });
   }
 
+  /* ---------------- Mouse parallax (Apple-like soft) ---------------- */
+  function initParallax() {
+    if (isCoarsePointer || prefersReducedMotion) return;
+    const els = document.querySelectorAll("[data-parallax]");
+    if (!els.length) return;
+    const state = [];
+    els.forEach((el) => {
+      const strength = parseFloat(el.dataset.parallax) || 0.05;
+      state.push({ el, strength, x: 0, y: 0, tx: 0, ty: 0 });
+    });
+    let mx = window.innerWidth / 2, my = window.innerHeight / 2;
+    window.addEventListener("mousemove", (e) => { mx = e.clientX; my = e.clientY; }, { passive: true });
+
+    function loop() {
+      const cx = window.innerWidth / 2;
+      const cy = window.innerHeight / 2;
+      state.forEach((s) => {
+        s.tx = (mx - cx) * s.strength;
+        s.ty = (my - cy) * s.strength;
+        s.x += (s.tx - s.x) * 0.08;
+        s.y += (s.ty - s.y) * 0.08;
+        s.el.style.translate = `${s.x.toFixed(2)}px ${s.y.toFixed(2)}px`;
+      });
+      requestAnimationFrame(loop);
+    }
+    loop();
+  }
+
   /* ---------------- Magnetic buttons ---------------- */
   function initMagnetic() {
     if (isCoarsePointer || prefersReducedMotion) return;
@@ -293,6 +321,7 @@
     initIntro();
     initLenis();
     initCursor();
+    initParallax();
     initMagnetic();
     initNav();
     initRevealsFallback();
