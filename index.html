@@ -25,7 +25,9 @@
   <!-- Top navigation -->
   <header class="nav" role="banner">
     <a href="index.html" class="nav__logo" aria-label="Monje360 home">
-      MONJE<span class="acid">360</span><span class="dot" aria-hidden="true"></span>
+      <span class="mark" aria-hidden="true"><img src="img/monje-360-recurso-7.svg" alt="" /></span>
+      <span class="wordmark">MONJE<span class="acid">360</span></span>
+      <span class="dot" aria-hidden="true"></span>
     </a>
     <nav class="nav__menu" aria-label="Principal">
       <a href="servicios.html">Servicios</a>
@@ -57,6 +59,17 @@
 
     <!-- =========== HERO =========== -->
     <section class="hero container" id="top">
+
+      <!-- Decorative orbs (Aura/Shelter inspiration) -->
+      <div class="orb orb--acid orb--lg" style="top:-10%; right:-12%;" aria-hidden="true"></div>
+      <div class="orb orb--white orb--md" style="bottom:-15%; left:-10%; animation-delay:-6s;" aria-hidden="true"></div>
+      <div class="orb orb--deep orb--sm" style="top:55%; right:35%; opacity:0.35; animation-delay:-12s;" aria-hidden="true"></div>
+
+      <!-- Monk silhouette behind type -->
+      <div class="monk-bg" aria-hidden="true">
+        <img src="img/monje-360-recurso-7.svg" alt="" style="filter: brightness(0) invert(1);" />
+      </div>
+
       <div class="hero__meta">
         <div class="left mono">
           <span class="pill"><span class="dot"></span> Aceptando proyectos · 2026</span>
@@ -119,6 +132,12 @@
         <div class="manifesto__inner">
           <div>
             <span class="pill"><span class="dot"></span> Manifiesto</span>
+            <div class="monk-portrait" style="padding-top: 32px;">
+              <div class="monk-portrait__halo" aria-hidden="true"></div>
+              <div class="monk-portrait__art">
+                <img src="img/monje-instagram.webp" alt="El monje · Monje360" />
+              </div>
+            </div>
           </div>
           <div>
             <p class="manifesto__text reveal">
@@ -156,15 +175,17 @@
             <div>
               <div class="service__num">01 / 04</div>
               <h3 class="service__title display">Social <span class="acid">Media</span></h3>
+              <p class="service__desc">Hacemos lo mismo que harías tú. Si tuvieras tiempo. Y ganas. Y criterio.</p>
             </div>
             <div>
-              <p class="service__desc">Hacemos lo mismo que harías tú. Si tuvieras tiempo. Y ganas. Y criterio. Calendario, copy, campañas en Meta y Google. Y ya está.</p>
               <ul class="service__list">
-                <li>Calendario que sí se publica</li>
-                <li>Copy que sí se lee</li>
-                <li>Meta & Google Ads</li>
-                <li>Reportes que sí se entienden</li>
+                <li>Estrategia de contenidos</li>
+                <li>Gestión de Instagram, TikTok & LinkedIn</li>
+                <li>Campañas Meta Ads</li>
+                <li>Campañas Google Ads</li>
+                <li>Reporting mensual</li>
               </ul>
+              <div class="service__visual"><img src="img/icon-social.png" alt="Servicio de Social Media" /></div>
             </div>
           </article>
 
@@ -172,15 +193,17 @@
             <div>
               <div class="service__num">02 / 04</div>
               <h3 class="service__title display">Branding & <span class="acid">Diseño</span></h3>
+              <p class="service__desc">Si tu logo no significa nada, tu marca tampoco. Lo arreglamos. Y luego escribimos el manual.</p>
             </div>
             <div>
-              <p class="service__desc">Si tu logo no significa nada, tu marca tampoco. Lo arreglamos. Y luego escribimos el manual para que no vuelvas a hacer la chapuza.</p>
               <ul class="service__list">
-                <li>Identidad que se reconoce</li>
-                <li>Manual que sí se usa</li>
+                <li>Naming & posicionamiento</li>
+                <li>Identidad visual</li>
+                <li>Manual de marca</li>
                 <li>Dirección de arte</li>
-                <li>Diseño que vende</li>
+                <li>Diseño editorial & web</li>
               </ul>
+              <div class="service__visual"><img src="img/icon-branding.png" alt="Servicio de Branding y Diseño" /></div>
             </div>
           </article>
 
@@ -188,15 +211,17 @@
             <div>
               <div class="service__num">03 / 04</div>
               <h3 class="service__title display">IA & <span class="acid">Automatización</span></h3>
+              <p class="service__desc">Tu equipo pierde 4 horas al día haciendo lo que un script de 30 líneas haría en 3 segundos.</p>
             </div>
             <div>
-              <p class="service__desc">Tu equipo pierde 4 horas al día haciendo lo que un script de 30 líneas haría en 3 segundos. Nosotros escribimos el script. Tú recuperas las horas.</p>
               <ul class="service__list">
-                <li>Chatbots que sí responden</li>
-                <li>Funnels que sí venden</li>
-                <li>Automatizaciones reales</li>
+                <li>Chatbots de ventas & atención</li>
+                <li>Funnels conversacionales</li>
+                <li>Automatización de email & CRM</li>
                 <li>Workflows internos</li>
+                <li>Integraciones con tu stack</li>
               </ul>
+              <div class="service__visual"><img src="img/icon-ia.png" alt="Servicio de IA y Automatización" /></div>
             </div>
           </article>
 
@@ -204,15 +229,17 @@
             <div>
               <div class="service__num">04 / 04</div>
               <h3 class="service__title display">Marketing <span class="acid">Performance</span></h3>
+              <p class="service__desc">Datos. De los que sirven para decidir. No de los que se enseñan al cliente para que se calle.</p>
             </div>
             <div>
-              <p class="service__desc">Datos. De los que sirven para decidir. No de los que se enseñan al cliente para que se calle. SEO, email, CRO y dashboards. Lo aburrido. Lo que vende.</p>
               <ul class="service__list">
-                <li>SEO que trae tráfico</li>
-                <li>Email que se abre</li>
-                <li>CRO & analítica</li>
-                <li>Dashboards a medida</li>
+                <li>Auditoría & SEO técnico</li>
+                <li>Email marketing</li>
+                <li>Optimización de conversión (CRO)</li>
+                <li>Analítica & dashboards</li>
+                <li>Estrategia de contenidos SEO</li>
               </ul>
+              <div class="service__visual"><img src="img/icon-marketing.png" alt="Servicio de Marketing Performance" /></div>
             </div>
           </article>
 
@@ -385,7 +412,7 @@
 
     <!-- =========== CTA GIANT =========== -->
     <section class="section cta-giant">
-      <div class="container">
+      <div class="container" style="position:relative; z-index:2;">
         <h2 class="cta-giant__title" data-scroll-words data-split-words>Tu proyecto. Y nosotros.</h2>
         <p class="cta-giant__sub">30 minutos. Sin venta. Sin presentación. Solo preguntas que sí valen. Si encajamos, seguimos. Si no, también te llevas el diagnóstico.</p>
         <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
@@ -399,6 +426,12 @@
 
   <!-- =========== FOOTER =========== -->
   <footer class="footer">
+    <div class="footer__brand" style="display:flex; align-items:center; gap:24px; margin-bottom:24px;">
+      <div style="width:80px; height:80px; background:var(--acid); border-radius:16px; display:grid; place-items:center;">
+        <img src="img/monje-360-recurso-7.svg" alt="" style="width:62px; height:62px;" />
+      </div>
+      <div class="mono muted-text">El monje no duerme. <span style="color:var(--acid)">Tu marketing tampoco debería.</span></div>
+    </div>
     <div data-footer-hero class="footer__hero">MONJE<span style="color:var(--acid)">360</span> · MONJE<span style="color:var(--acid)">360</span></div>
 
     <div class="footer__grid">

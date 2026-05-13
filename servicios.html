@@ -15,7 +15,11 @@
 <body>
 
   <header class="nav">
-    <a href="index.html" class="nav__logo">MONJE<span class="acid">360</span><span class="dot"></span></a>
+    <a href="index.html" class="nav__logo" aria-label="Monje360 home">
+      <span class="mark" aria-hidden="true"><img src="img/monje-360-recurso-7.svg" alt="" /></span>
+      <span class="wordmark">MONJE<span class="acid">360</span></span>
+      <span class="dot" aria-hidden="true"></span>
+    </a>
     <nav class="nav__menu" aria-label="Principal">
       <a href="servicios.html" class="is-active">Servicios</a>
       <a href="casos.html">Casos</a>
@@ -39,8 +43,10 @@
 
   <main>
 
-    <section class="page-head container">
-      <div class="page-head__crumb mono">Inicio / <span class="acid">Servicios</span></div>
+    <section class="page-head container" style="position:relative; overflow:hidden;">
+      <div class="orb orb--acid orb--md" style="top:-10%; right:-12%;" aria-hidden="true"></div>
+      <div class="orb orb--white orb--sm" style="bottom:-10%; left:-5%;" aria-hidden="true"></div>
+      <div class="page-head__crumb mono" style="position:relative; z-index:2;">Inicio / <span class="acid">Servicios</span></div>
       <h1 class="page-head__title" data-page-title>
         Esto es lo que <span class="acid">sí</span> sabemos hacer.<br/>
         El resto, no.
@@ -131,6 +137,12 @@
   </main>
 
   <footer class="footer">
+    <div class="footer__brand" style="display:flex; align-items:center; gap:24px; margin-bottom:24px;">
+      <div style="width:80px; height:80px; background:var(--acid); border-radius:16px; display:grid; place-items:center;">
+        <img src="img/monje-360-recurso-7.svg" alt="" style="width:62px; height:62px;" />
+      </div>
+      <div class="mono muted-text">El monje no duerme. <span style="color:var(--acid)">Tu marketing tampoco debería.</span></div>
+    </div>
     <div data-footer-hero class="footer__hero">MONJE<span style="color:var(--acid)">360</span> · MONJE<span style="color:var(--acid)">360</span></div>
     <div class="footer__grid">
       <div class="footer__col">
