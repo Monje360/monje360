@@ -181,26 +181,24 @@ body::before {
   box-shadow: var(--inner-hl);
 }
 .nav__logo {
-  display: inline-flex; align-items: center; gap: 10px;
-  font-family: var(--font-display); font-weight: 800;
-  font-size: 18px; letter-spacing: -0.04em;
-  text-transform: uppercase;
+  display: inline-flex; align-items: center;
+  transition: opacity var(--t-fast) var(--ease-out);
 }
-.nav__logo .mark {
-  width: 30px; height: 30px;
-  display: grid; place-items: center;
-  border-radius: 8px;
-  background: var(--acid);
-  overflow: hidden;
-  transition: transform var(--t-fast) var(--ease-spring), border-radius var(--t-med);
+.nav__logo:hover { opacity: 0.78; }
+.nav__logo img {
+  height: 30px;
+  width: auto;
+  display: block;
 }
-.nav__logo:hover .mark { transform: rotate(-8deg) scale(1.08); border-radius: 50%; }
-.nav__logo .mark svg,
-.nav__logo .mark img { width: 22px; height: 22px; object-fit: contain; }
-.nav__logo .wordmark { display: inline-flex; align-items: baseline; gap: 1px; }
-.nav__logo .dot { display: inline-block; width: 7px; height: 7px; background: var(--acid); border-radius: 50%; margin-left: 4px; align-self: center; }
 @media (max-width: 540px) {
-  .nav__logo .wordmark { display: none; }
+  .nav__logo img { height: 26px; }
+}
+
+/* Footer brand lockup */
+.footer__brand-img {
+  height: 42px;
+  width: auto;
+  display: block;
 }
 .nav__menu { display: flex; gap: 28px; }
 .nav__menu a {
