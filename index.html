@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Monje360 — Menos ocurrencias. Más resultados.</title>
   <meta name="description" content="Agencia de marketing + IA. Comunicación estratégica con resultados medibles. Valencia · Madrid · Worldwide." />
-  <meta name="theme-color" content="#F4F1EA" />
+  <meta name="theme-color" content="#000000" />
   <meta property="og:title" content="Monje360 — Menos ocurrencias. Más resultados." />
   <meta property="og:description" content="Agencia de marketing + IA. Estrategia, acción, resultados." />
   <meta property="og:type" content="website" />
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000'/%3E%3Ctext x='50' y='62' font-family='Inter' font-weight='800' font-size='44' text-anchor='middle' fill='%23C6F600'%3E360%3C/text%3E%3C/svg%3E" />
 </head>
-<body class="paper-mode">
+<body>
 
   <!-- Intro overlay -->
   <div class="overlay" aria-hidden="true">
@@ -57,166 +57,386 @@
 
   <main>
 
-    <!-- =========== HERO (Boncho spaced letters) =========== -->
-    <section class="b-hero" id="top">
-      <div class="b-hero__brand">
-        <div class="b-hero__letters" data-hero-words>
-          <span class="word">M</span><span class="word">O</span><span class="word">N</span><span class="word">J</span><span class="word">E</span>
-        </div>
-        <div class="b-hero__r">®</div>
-        <div class="b-hero__suffix">360</div>
+    <!-- =========== HERO =========== -->
+    <section class="hero container" id="top">
+
+      <!-- Decorative orbs (Aura/Shelter inspiration) -->
+      <div class="orb orb--acid orb--lg" style="top:-10%; right:-12%;" aria-hidden="true" data-parallax="0.03"></div>
+      <div class="orb orb--white orb--md" style="bottom:-15%; left:-10%; animation-delay:-6s;" aria-hidden="true" data-parallax="0.05"></div>
+      <div class="orb orb--acid orb--sm" style="top:55%; right:35%; opacity:0.35; animation-delay:-12s;" aria-hidden="true" data-parallax="0.08"></div>
+
+      <!-- Monk silhouette behind type -->
+      <div class="monk-bg" aria-hidden="true" data-parallax="0.02">
+        <img src="img/monje-360-recurso-7.svg" alt="" style="filter: brightness(0) invert(1);" />
       </div>
 
-      <div class="b-hero__bottom">
-        <p class="b-hero__tag reveal">
-          Monje360: <em>Agencia de marketing + IA.</em><br/>
-          Lo que pasa cuando tu marca <b>empieza a vender</b><br/>
-          en lugar de hablar.
-        </p>
-        <div class="b-hero__meta reveal" data-delay="120">
+      <div class="hero__meta">
+        <div class="left mono">
+          <span class="pill"><span class="dot"></span> Aceptando proyectos · 2026</span>
+        </div>
+        <div class="right mono">
           <div>Valencia · Madrid · Worldwide</div>
           <div data-year style="margin-top:6px;">2026</div>
-          <div style="margin-top:12px;">Aceptando proyectos · 2026</div>
+        </div>
+      </div>
+
+      <h1 class="hero__title" data-hero-words>
+        <span class="hero__row" data-split-words>Tu marketing</span>
+        <span class="hero__row stroke" data-split-words>No vende.</span>
+        <span class="hero__row" data-split-words>Lo sabes.</span>
+        <span class="hero__row acid" data-split-words>Lo arreglamos.</span>
+      </h1>
+
+      <div class="hero__footer">
+        <p class="lead muted-text" style="max-width: 52ch;">
+          Hacemos marketing. Del que vende, no del que gana premios.<br/>
+          Si buscas premios, hay agencias muy bonitas.<br/>
+          Si buscas clientes, sigue leyendo.
+        </p>
+        <div class="hero__cta-group">
+          <a href="contacto.html" class="btn btn--brutal" data-magnetic>
+            Quiero clientes <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#manifiesto" class="btn btn--ghost" data-magnetic>
+            Léeme primero
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-cue mono" style="position:absolute; right: var(--pad-x); bottom: 24px;">
+        Scroll <span class="bar"></span>
+      </div>
+    </section>
+
+    <!-- =========== MARQUEE =========== -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        Branding <span class="star">✦</span>
+        Social Media <span class="star">✦</span>
+        IA & Automatización <span class="star">✦</span>
+        Performance <span class="star">✦</span>
+        Estrategia <span class="star">✦</span>
+        Campañas <span class="star">✦</span>
+        Branding <span class="star">✦</span>
+        Social Media <span class="star">✦</span>
+        IA & Automatización <span class="star">✦</span>
+        Performance <span class="star">✦</span>
+        Estrategia <span class="star">✦</span>
+        Campañas <span class="star">✦</span>
+      </div>
+    </section>
+
+    <!-- =========== MANIFIESTO =========== -->
+    <section class="section manifesto" id="manifiesto">
+      <div class="container">
+        <div class="manifesto__inner">
+          <div>
+            <span class="pill"><span class="dot"></span> Manifiesto</span>
+            <div class="monk-portrait" style="padding-top: 32px;">
+              <div class="monk-portrait__halo" aria-hidden="true"></div>
+              <div class="monk-portrait__art">
+                <img src="img/monje-instagram.webp" alt="El monje · Monje360" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="manifesto__text reveal">
+              Si tu empresa habla pero <span class="strike">nadie compra</span>, no tienes un problema de marketing.<br/>
+              Tienes un problema de honestidad.<br/>
+              Nadie te ha dicho que lo que haces no se entiende.<br/>
+              <span class="acid">Nosotros sí.</span><br/>
+              Y luego lo arreglamos.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- =========== IMAGE MARQUEE =========== -->
-    <section class="b-img-marquee" aria-hidden="true">
-      <div class="b-img-marquee__track">
-        <!-- Set 1 -->
-        <div class="b-img-marquee__item b-img-marquee__item--circle"><img src="img/monje-360-recurso-7.svg" alt="" /></div>
-        <div class="b-img-marquee__item"><img src="img/icon-social.png" alt="" /></div>
-        <div class="b-img-marquee__item b-img-marquee__item--wide"><img src="img/icon-ia.png" alt="" /></div>
-        <div class="b-img-marquee__item"><img src="img/icon-branding.png" alt="" /></div>
-        <div class="b-img-marquee__item b-img-marquee__item--tall"><img src="img/monje-instagram.webp" alt="" /></div>
-        <div class="b-img-marquee__item b-img-marquee__item--wide"><img src="img/icon-marketing.png" alt="" /></div>
-        <!-- Set 2 (duplicated for seamless loop) -->
-        <div class="b-img-marquee__item b-img-marquee__item--circle"><img src="img/monje-360-recurso-7.svg" alt="" /></div>
-        <div class="b-img-marquee__item"><img src="img/icon-social.png" alt="" /></div>
-        <div class="b-img-marquee__item b-img-marquee__item--wide"><img src="img/icon-ia.png" alt="" /></div>
-        <div class="b-img-marquee__item"><img src="img/icon-branding.png" alt="" /></div>
-        <div class="b-img-marquee__item b-img-marquee__item--tall"><img src="img/monje-instagram.webp" alt="" /></div>
-        <div class="b-img-marquee__item b-img-marquee__item--wide"><img src="img/icon-marketing.png" alt="" /></div>
-      </div>
-    </section>
+    <!-- =========== SERVICIOS (Apple product-page style) =========== -->
+    <section class="services-clean" id="servicios" aria-label="Servicios">
 
-    <!-- =========== WORDMARK SEPARATOR =========== -->
-    <section class="b-wordmark" aria-hidden="true">
-      <h2>MONJE<sup>®</sup></h2>
-    </section>
-
-    <!-- =========== SERVICES (Boncho list) =========== -->
-    <section class="b-services" id="servicios">
-      <div class="b-services__inner">
-        <div class="b-services__head">
-          <span class="label">— Servicios</span>
-          <h3>Branding,<br/>pero <span style="background:var(--acid); padding:0 0.16em 0.06em; border-radius:0.18em;">honesto</span>.</h3>
-          <p class="b-services__lead">
-            Una marca no se construye con un logo. Se construye con una decisión:<br/>
-            dejar de hacer ruido para empezar a vender.
+      <!-- Section intro -->
+      <div class="section container" style="padding-bottom: clamp(40px, 6vh, 80px);">
+        <div class="services__head">
+          <div>
+            <span class="pill"><span class="dot"></span> Qué hacemos</span>
+            <h2 class="h2 reveal" style="margin-top:24px;">
+              Cuatro cosas. <br/>Las <span class="acid">únicas</span> que sabemos hacer.
+            </h2>
+          </div>
+          <p class="lead muted-text reveal" data-delay="120">
+            No tenemos paquetes. No tenemos catálogo. No tenemos plantillas.<br/>
+            Tenemos esto. Y lo hacemos bien.<br/>
+            El resto se lo dejamos a quien tenga más tiempo libre.
           </p>
         </div>
-        <ul class="b-services__list">
-          <li>
-            <a href="servicios.html#branding">
-              <span class="b-srv__num">(01)</span>
-              <span class="b-srv__name">Branding</span>
-              <span class="b-srv__desc">Si tu logo no significa nada, tu marca tampoco. Lo arreglamos.</span>
-              <span class="b-srv__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li>
-            <a href="servicios.html#social">
-              <span class="b-srv__num">(02)</span>
-              <span class="b-srv__name">Social Media</span>
-              <span class="b-srv__desc">Lo mismo que harías tú. Si tuvieras tiempo, ganas y criterio.</span>
-              <span class="b-srv__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li>
-            <a href="servicios.html#ia">
-              <span class="b-srv__num">(03)</span>
-              <span class="b-srv__name">IA &amp; Automatización</span>
-              <span class="b-srv__desc">4 horas al día perdidas en lo que un script haría en 3 segundos.</span>
-              <span class="b-srv__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li>
-            <a href="servicios.html#performance">
-              <span class="b-srv__num">(04)</span>
-              <span class="b-srv__name">Performance</span>
-              <span class="b-srv__desc">Datos. De los que sirven. No de los que se enseñan al cliente para que se calle.</span>
-              <span class="b-srv__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-        </ul>
       </div>
-    </section>
 
-    <!-- =========== PROJECTS =========== -->
-    <section class="b-projects" id="casos">
-      <div class="b-projects__inner">
-        <div class="b-projects__head">
-          <div>
-            <span class="label">— Casos</span>
-            <h3>Marcas que <span style="color:var(--acid);">facturan</span>.</h3>
+      <!-- Panel 01 · Social Media (DARK) -->
+      <article class="s-panel s-panel--dark">
+        <div class="s-panel__orb" style="top:-20%; right:-15%;" aria-hidden="true"></div>
+        <div class="s-panel__inner">
+          <div class="reveal">
+            <div class="s-panel__eyebrow"><span class="num">01</span> · Servicio</div>
+            <h3 class="s-panel__title">Social <span class="acid">Media</span></h3>
+            <p class="s-panel__desc">Hacemos lo mismo que harías tú. Si tuvieras tiempo. Y ganas. Y criterio.</p>
+            <ul class="s-panel__list">
+              <li>Estrategia de contenidos</li>
+              <li>Gestión Instagram & TikTok</li>
+              <li>Gestión LinkedIn</li>
+              <li>Campañas Meta Ads</li>
+              <li>Campañas Google Ads</li>
+              <li>Reporting mensual</li>
+            </ul>
+            <a href="servicios.html#social" class="s-panel__cta">Saber más <span aria-hidden="true">→</span></a>
           </div>
-          <a href="casos.html">Ver todos →</a>
+          <div class="s-panel__media reveal" data-delay="120">
+            <img src="img/icon-social.png" alt="Social Media · Monje360" />
+          </div>
+        </div>
+      </article>
+
+      <!-- Panel 02 · Branding & Diseño (LIGHT / paper) -->
+      <article class="s-panel s-panel--light s-panel--reverse">
+        <div class="s-panel__inner">
+          <div class="reveal">
+            <div class="s-panel__eyebrow"><span class="num">02</span> · Servicio</div>
+            <h3 class="s-panel__title">Branding &amp; <span class="acid">Diseño</span></h3>
+            <p class="s-panel__desc">Si tu logo no significa nada, tu marca tampoco. Lo arreglamos. Y luego escribimos el manual.</p>
+            <ul class="s-panel__list">
+              <li>Naming &amp; posicionamiento</li>
+              <li>Identidad visual</li>
+              <li>Manual de marca</li>
+              <li>Dirección de arte</li>
+              <li>Diseño editorial</li>
+              <li>Web design</li>
+            </ul>
+            <a href="servicios.html#branding" class="s-panel__cta">Saber más <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="s-panel__media reveal" data-delay="120">
+            <img src="img/icon-branding.png" alt="Branding &amp; Diseño · Monje360" />
+          </div>
+        </div>
+      </article>
+
+      <!-- Panel 03 · IA & Automatización (DARK + lime glow) -->
+      <article class="s-panel s-panel--dark">
+        <div class="s-panel__orb" style="bottom:-25%; left:-10%;" aria-hidden="true"></div>
+        <div class="s-panel__inner">
+          <div class="reveal">
+            <div class="s-panel__eyebrow"><span class="num">03</span> · Servicio</div>
+            <h3 class="s-panel__title">IA &amp; <span class="acid">Automatización</span></h3>
+            <p class="s-panel__desc">Tu equipo pierde 4 horas al día haciendo lo que un script de 30 líneas haría en 3 segundos.</p>
+            <ul class="s-panel__list">
+              <li>Chatbots de ventas</li>
+              <li>Funnels conversacionales</li>
+              <li>Email &amp; CRM</li>
+              <li>Workflows internos</li>
+              <li>Integraciones</li>
+              <li>Asistentes IA a medida</li>
+            </ul>
+            <a href="servicios.html#ia" class="s-panel__cta">Saber más <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="s-panel__media reveal" data-delay="120">
+            <img src="img/icon-ia.png" alt="IA &amp; Automatización · Monje360" />
+          </div>
+        </div>
+      </article>
+
+      <!-- Panel 04 · Performance (ACENTO LIMA — punto final) -->
+      <article class="s-panel s-panel--accent">
+        <div class="s-panel__inner">
+          <div class="reveal">
+            <div class="s-panel__eyebrow"><span class="num">04</span> · Servicio</div>
+            <h3 class="s-panel__title">Marketing <span class="acid">Performance</span></h3>
+            <p class="s-panel__desc">Datos. De los que sirven para decidir. No de los que se enseñan al cliente para que se calle.</p>
+            <ul class="s-panel__list">
+              <li>Auditoría SEO técnico</li>
+              <li>Email marketing</li>
+              <li>CRO</li>
+              <li>Analítica</li>
+              <li>Dashboards</li>
+              <li>Contenidos SEO</li>
+            </ul>
+            <a href="servicios.html#performance" class="s-panel__cta">Saber más <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- =========== CASES =========== -->
+    <section class="section cases" id="casos">
+      <div class="container">
+        <div class="services__head" style="margin-bottom: clamp(40px, 6vh, 80px);">
+          <div>
+            <span class="pill"><span class="dot"></span> Casos seleccionados</span>
+            <h2 class="h2 reveal" style="margin-top:24px;">
+              Aquí hay marcas. <br/>Y todas <span class="acid">facturan</span>.
+            </h2>
+          </div>
+          <a href="casos.html" class="btn btn--ghost" data-magnetic style="align-self:end;">
+            Ver todos <span class="arrow" aria-hidden="true">→</span>
+          </a>
         </div>
 
-        <div class="b-projects__grid">
-          <a href="casos.html" class="b-project">
-            <div class="b-project__media">
-              <div class="art art-yamaha" style="position:absolute; inset:0;"></div>
+        <div class="cases__grid">
+
+          <a href="casos.html" class="case case--wide reveal" aria-label="Yamaha Moto Joker">
+            <div class="case__art art-yamaha"></div>
+            <div class="case__head">
+              <span class="mono case__tag">Branding · Performance</span>
+              <span class="mono">2025</span>
             </div>
-            <div class="b-project__head">
-              <h4 class="b-project__name">Yamaha Moto Joker</h4>
-              <span class="b-project__num">(01)</span>
-            </div>
-            <div class="mono muted-text" style="margin-top:6px; font-size:13px;">Branding · Performance</div>
+            <h3 class="case__title">Yamaha<br/>Moto Joker</h3>
           </a>
 
-          <a href="casos.html" class="b-project">
-            <div class="b-project__media">
-              <div class="art art-bio" style="position:absolute; inset:0;"></div>
+          <a href="casos.html" class="case case--narrow reveal" data-delay="100" aria-label="Biohacking Salvaje">
+            <div class="case__art art-bio"></div>
+            <div class="case__head">
+              <span class="mono case__tag">IA · Social</span>
+              <span class="mono">2025</span>
             </div>
-            <div class="b-project__head">
-              <h4 class="b-project__name">Biohacking Salvaje</h4>
-              <span class="b-project__num">(02)</span>
-            </div>
-            <div class="mono muted-text" style="margin-top:6px; font-size:13px;">IA · Social</div>
+            <h3 class="case__title">Biohacking<br/>Salvaje</h3>
           </a>
 
-          <a href="casos.html" class="b-project">
-            <div class="b-project__media">
-              <div class="art art-padel" style="position:absolute; inset:0;"></div>
+          <a href="casos.html" class="case case--half reveal" aria-label="JM Padel Academy">
+            <div class="case__art art-padel"></div>
+            <div class="case__head">
+              <span class="mono case__tag">Social · Branding</span>
+              <span class="mono">2025</span>
             </div>
-            <div class="b-project__head">
-              <h4 class="b-project__name">JM Padel Academy</h4>
-              <span class="b-project__num">(03)</span>
-            </div>
-            <div class="mono muted-text" style="margin-top:6px; font-size:13px;">Social · Branding</div>
+            <h3 class="case__title">JM Padel<br/>Academy</h3>
           </a>
+
+          <a href="casos.html" class="case case--half reveal" data-delay="100" aria-label="Marca en confidencial">
+            <div class="case__art art-jm"></div>
+            <div class="case__head">
+              <span class="mono case__tag">Confidencial</span>
+              <span class="mono">2026</span>
+            </div>
+            <h3 class="case__title">Proyecto<br/>NDA · 2026</h3>
+          </a>
+
         </div>
       </div>
     </section>
 
-    <!-- =========== CONTACT CTA =========== -->
-    <section class="b-cta" id="contacto">
-      <div class="b-cta__inner">
-        <span class="label">— Contacto</span>
-        <h3>Crea tu propio<br/><span class="acid">Monje</span>.</h3>
-        <p class="b-cta__sub">Ten la mejor reunión de la semana.<br/>30 minutos. Sin venta. Sin presentación.</p>
+    <!-- =========== PROCESS =========== -->
+    <section class="section process">
+      <div class="container">
+        <div class="services__head">
+          <div>
+            <span class="pill"><span class="dot"></span> Cómo trabajamos</span>
+            <h2 class="h2 reveal" style="margin-top:24px;">
+              Tres pasos. Cero <span class="acid">teatro</span>.
+            </h2>
+          </div>
+          <p class="lead reveal" data-delay="120" style="color:rgba(0,0,0,0.7);">
+            No hay magia. No hay fórmula secreta. No hay método patentado.<br/>
+            Hay cabeza, hay manos y hay calculadora.
+          </p>
+        </div>
 
-        <a href="mailto:hola@monje360.com" class="b-cta__card" data-magnetic>
-          <span class="b-cta__avatar"><img src="img/monje-360-recurso-7.svg" alt="" /></span>
-          <span class="b-cta__email">
-            <span class="lbl">Email de contacto</span>
-            <span class="val">hola@monje360.com</span>
-          </span>
-          <span class="b-cta__send">Enviar →</span>
-        </a>
+        <div class="process__grid">
+          <div class="step reveal">
+            <div class="step__num">01 <small>/03</small></div>
+            <h3 class="step__title">Pensamos</h3>
+            <p class="step__text">Antes de hacer. Suena obvio. La mayoría se lo salta. Auditamos, preguntamos al cliente real y ponemos número a cada objetivo. Si no se mide, no se hace.</p>
+          </div>
+          <div class="step reveal" data-delay="100">
+            <div class="step__num">02 <small>/03</small></div>
+            <h3 class="step__title">Ejecutamos</h3>
+            <p class="step__text">Rápido. Sin reuniones de tres horas para decidir el color de un botón. Campañas, contenidos, automatizaciones y diseño. A funcionar.</p>
+          </div>
+          <div class="step reveal" data-delay="200">
+            <div class="step__num">03 <small>/03</small></div>
+            <h3 class="step__title">Te enseñamos</h3>
+            <p class="step__text">Lo que ha funcionado. Y lo que no. Sin maquillaje. Iteramos lo que falla, escalamos lo que vende. Punto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== STATS =========== -->
+    <section class="stats">
+      <div class="stats__grid">
+        <div class="stat">
+          <div class="stat__num" data-count="120" data-suffix="+">0+</div>
+          <div class="stat__label">Cosas que han funcionado</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="48" data-suffix="">0</div>
+          <div class="stat__label">Clientes que repiten</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="7" data-suffix=" años">0</div>
+          <div class="stat__label">Sin perder el norte</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="0" data-suffix="">0</div>
+          <div class="stat__label">Slides en nuestras reuniones</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== TESTIMONIALS =========== -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="testimonials__head">
+          <div>
+            <span class="pill"><span class="dot"></span> Voces</span>
+            <h2 class="h2 reveal" style="margin-top:24px;">
+              No te lo digo yo. <br/><span class="acid">Te lo dicen ellos</span>.
+            </h2>
+          </div>
+          <p class="lead muted-text reveal" data-delay="120">Mejor que oírnos a nosotros explicar lo buenos que somos es oír a los que pagan.</p>
+        </div>
+
+        <div class="testimonials__grid">
+          <article class="testi reveal">
+            <p class="testi__quote">Antes hacíamos ruido. Ahora vendemos. Que es algo bastante distinto.</p>
+            <div class="testi__by">
+              <div class="testi__avatar" aria-hidden="true">JM</div>
+              <div class="testi__meta">
+                <span class="testi__name">Jose M.</span>
+                <span class="testi__role">CEO · Consumo</span>
+              </div>
+            </div>
+          </article>
+          <article class="testi reveal" data-delay="100">
+            <p class="testi__quote">Es la primera agencia que me trae reportes que entiendo. Y la primera que me dice cuando algo no funciona.</p>
+            <div class="testi__by">
+              <div class="testi__avatar" aria-hidden="true">JT</div>
+              <div class="testi__meta">
+                <span class="testi__name">Javi T.</span>
+                <span class="testi__role">Fundador · Servicios</span>
+              </div>
+            </div>
+          </article>
+          <article class="testi reveal" data-delay="200">
+            <p class="testi__quote">Automatizaron en una semana lo que llevábamos tres años posponiendo. Me devolvieron horas. Y dinero.</p>
+            <div class="testi__by">
+              <div class="testi__avatar" aria-hidden="true">AA</div>
+              <div class="testi__meta">
+                <span class="testi__name">Alejandro A.</span>
+                <span class="testi__role">COO · Retail</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== CTA GIANT =========== -->
+    <section class="section cta-giant">
+      <div class="container" style="position:relative; z-index:2;">
+        <h2 class="cta-giant__title" data-scroll-words data-split-words>Tu proyecto. Y nosotros.</h2>
+        <p class="cta-giant__sub">30 minutos. Sin venta. Sin presentación. Solo preguntas que sí valen. Si encajamos, seguimos. Si no, también te llevas el diagnóstico.</p>
+        <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+          <a href="contacto.html" class="btn btn--brutal" data-magnetic>Reservar diagnóstico <span class="arrow" aria-hidden="true">→</span></a>
+          <a href="tel:+34619814199" class="btn btn--ghost" data-magnetic style="color:var(--ink); border-color: var(--ink);">619 814 199</a>
+        </div>
       </div>
     </section>
 
@@ -224,13 +444,13 @@
 
   <!-- =========== FOOTER =========== -->
   <footer class="footer">
-    <div class="footer__brand" style="display:flex; align-items:center; gap:18px; margin-bottom:24px;">
+    <div class="footer__brand" style="display:flex; align-items:center; gap:24px; margin-bottom:24px;">
       <div style="width:48px; height:48px; background:var(--acid); border-radius:12px; display:grid; place-items:center; box-shadow: 0 0 32px -6px rgba(198,246,0,0.5);">
         <img src="img/monje-360-recurso-7.svg" alt="" style="width:34px; height:34px;" />
       </div>
-      <div class="mono">El monje no duerme. <span style="color:var(--ink); background:var(--acid); padding:0 6px;">Tu marketing tampoco debería.</span></div>
+      <div class="mono muted-text">El monje no duerme. <span style="color:var(--acid)">Tu marketing tampoco debería.</span></div>
     </div>
-    <div data-footer-hero class="footer__hero">MONJE<sup style="font-family:var(--font-body); font-size:0.18em; font-weight:400; vertical-align: top; margin-left:0.04em;">®</sup></div>
+    <div data-footer-hero class="footer__hero">MONJE<span style="color:var(--acid)">360</span> · MONJE<span style="color:var(--acid)">360</span></div>
 
     <div class="footer__grid">
       <div class="footer__col">
