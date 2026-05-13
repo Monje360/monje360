@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Contacto — Monje360</title>
+  <meta name="description" content="Cuéntanos tu proyecto. Diagnóstico gratuito en 30 minutos." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000'/%3E%3Ctext x='50' y='62' font-family='Inter' font-weight='800' font-size='44' text-anchor='middle' fill='%23C6F600'%3E360%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <header class="nav">
+    <a href="index.html" class="nav__logo">MONJE<span class="acid">360</span><span class="dot"></span></a>
+    <nav class="nav__menu" aria-label="Principal">
+      <a href="servicios.html">Servicios</a>
+      <a href="casos.html">Casos</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html" class="is-active">Contacto</a>
+    </nav>
+    <div class="nav__cta">
+      <a href="contacto.html" class="btn" data-magnetic>Hablemos <span class="arrow">→</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu">
+    <a href="servicios.html">Servicios</a>
+    <a href="casos.html">Casos</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="blog.html">Blog</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main>
+
+    <section class="page-head container">
+      <div class="page-head__crumb mono">Inicio / <span class="acid">Contacto</span></div>
+      <h1 class="page-head__title" data-page-title>
+        Cuéntanos.<br/>
+        Te <span class="acid">respondemos</span> en 24h.
+      </h1>
+      <p class="page-head__lead">Sin formularios eternos. Lo justo para entender si encajamos y poder llamarte con criterio.</p>
+    </section>
+
+    <section class="section container">
+      <div style="display:grid; grid-template-columns: 1.4fr 1fr; gap: var(--gap); align-items:start;">
+
+        <form class="form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Enviado ✓'; this.querySelector('button').style.background='var(--acid)';">
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input id="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="company">Empresa</label>
+            <input id="company" type="text" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="phone">Teléfono</label>
+            <input id="phone" type="tel" autocomplete="tel" />
+          </div>
+          <div class="field field--wide">
+            <label for="service">Servicio que te interesa</label>
+            <select id="service">
+              <option>Estrategia 360</option>
+              <option>Social Media</option>
+              <option>Branding & Diseño</option>
+              <option>IA & Automatización</option>
+              <option>Performance</option>
+              <option>Aún no lo tengo claro</option>
+            </select>
+          </div>
+          <div class="field field--wide">
+            <label for="msg">Cuéntanos el proyecto</label>
+            <textarea id="msg" rows="6" required placeholder="¿Dónde estás hoy? ¿Dónde quieres estar?"></textarea>
+          </div>
+          <div class="field field--wide">
+            <button type="submit" class="btn btn--brutal" data-magnetic>Enviar mensaje <span class="arrow">→</span></button>
+          </div>
+        </form>
+
+        <aside style="display:flex; flex-direction:column; gap:32px;">
+          <div>
+            <div class="mono muted-text" style="margin-bottom:8px;">Llámanos</div>
+            <a href="tel:+34619814199" class="h3 acid">619 814 199</a>
+          </div>
+          <div>
+            <div class="mono muted-text" style="margin-bottom:8px;">Email directo</div>
+            <a href="mailto:hola@monje360.com" class="h3">hola@monje360.com</a>
+          </div>
+          <div>
+            <div class="mono muted-text" style="margin-bottom:8px;">Oficinas</div>
+            <div class="lead">Valencia · Madrid · Worldwide</div>
+          </div>
+          <div>
+            <div class="mono muted-text" style="margin-bottom:8px;">Horario</div>
+            <div class="lead">Lun – Vie · 9:00 – 19:00 CET</div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div data-footer-hero class="footer__hero">MONJE<span style="color:var(--acid)">360</span> · MONJE<span style="color:var(--acid)">360</span></div>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a href="tel:+34619814199">+34 619 814 199</a>
+        <a href="mailto:hola@monje360.com">hola@monje360.com</a>
+        <a href="https://instagram.com/monje360" rel="noopener" target="_blank">Instagram ↗</a>
+      </div>
+      <div class="footer__col">
+        <h4>Servicios</h4>
+        <a href="servicios.html#social">Social Media</a>
+        <a href="servicios.html#branding">Branding</a>
+        <a href="servicios.html#ia">IA & Automatización</a>
+        <a href="servicios.html#performance">Performance</a>
+      </div>
+      <div class="footer__col">
+        <h4>Empresa</h4>
+        <a href="sobre.html">Sobre</a>
+        <a href="casos.html">Casos</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer__col">
+        <h4>Oficinas</h4>
+        <a>Valencia</a>
+        <a>Madrid</a>
+        <a>Worldwide</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> Monje360</span>
+      <span>Hecho con foco · Desplegado en Vercel</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
