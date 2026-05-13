@@ -152,11 +152,9 @@
       </div>
     </section>
 
-    <!-- =========== SERVICIOS (Apple product-page style) =========== -->
-    <section class="services-clean" id="servicios" aria-label="Servicios">
-
-      <!-- Section intro -->
-      <div class="section container" style="padding-bottom: clamp(40px, 6vh, 80px);">
+    <!-- =========== SERVICIOS (sticky stack) =========== -->
+    <section class="section services" id="servicios">
+      <div class="container">
         <div class="services__head">
           <div>
             <span class="pill"><span class="dot"></span> Qué hacemos</span>
@@ -170,99 +168,83 @@
             El resto se lo dejamos a quien tenga más tiempo libre.
           </p>
         </div>
+
+        <div class="services__stack">
+
+          <article class="service">
+            <div>
+              <div class="service__num">01 / 04</div>
+              <h3 class="service__title display">Social <span class="acid">Media</span></h3>
+              <p class="service__desc">Hacemos lo mismo que harías tú. Si tuvieras tiempo. Y ganas. Y criterio.</p>
+            </div>
+            <div>
+              <ul class="service__list">
+                <li>Estrategia de contenidos</li>
+                <li>Gestión de Instagram, TikTok & LinkedIn</li>
+                <li>Campañas Meta Ads</li>
+                <li>Campañas Google Ads</li>
+                <li>Reporting mensual</li>
+              </ul>
+              <div class="service__visual"><img src="img/icon-social.png" alt="Servicio de Social Media" /></div>
+            </div>
+          </article>
+
+          <article class="service">
+            <div>
+              <div class="service__num">02 / 04</div>
+              <h3 class="service__title display">Branding & <span class="acid">Diseño</span></h3>
+              <p class="service__desc">Si tu logo no significa nada, tu marca tampoco. Lo arreglamos. Y luego escribimos el manual.</p>
+            </div>
+            <div>
+              <ul class="service__list">
+                <li>Naming & posicionamiento</li>
+                <li>Identidad visual</li>
+                <li>Manual de marca</li>
+                <li>Dirección de arte</li>
+                <li>Diseño editorial & web</li>
+              </ul>
+              <div class="service__visual"><img src="img/icon-branding.png" alt="Servicio de Branding y Diseño" /></div>
+            </div>
+          </article>
+
+          <article class="service">
+            <div>
+              <div class="service__num">03 / 04</div>
+              <h3 class="service__title display">IA & <span class="acid">Automatización</span></h3>
+              <p class="service__desc">Tu equipo pierde 4 horas al día haciendo lo que un script de 30 líneas haría en 3 segundos.</p>
+            </div>
+            <div>
+              <ul class="service__list">
+                <li>Chatbots de ventas & atención</li>
+                <li>Funnels conversacionales</li>
+                <li>Automatización de email & CRM</li>
+                <li>Workflows internos</li>
+                <li>Integraciones con tu stack</li>
+              </ul>
+              <div class="service__visual"><img src="img/icon-ia.png" alt="Servicio de IA y Automatización" /></div>
+            </div>
+          </article>
+
+          <article class="service">
+            <div>
+              <div class="service__num">04 / 04</div>
+              <h3 class="service__title display">Marketing <span class="acid">Performance</span></h3>
+              <p class="service__desc">Datos. De los que sirven para decidir. No de los que se enseñan al cliente para que se calle.</p>
+            </div>
+            <div>
+              <ul class="service__list">
+                <li>Auditoría & SEO técnico</li>
+                <li>Email marketing</li>
+                <li>Optimización de conversión (CRO)</li>
+                <li>Analítica & dashboards</li>
+                <li>Estrategia de contenidos SEO</li>
+              </ul>
+              <div class="service__visual"><img src="img/icon-marketing.png" alt="Servicio de Marketing Performance" /></div>
+            </div>
+          </article>
+
+        </div>
       </div>
-
-      <!-- Panel 01 · Social Media (DARK) -->
-      <article class="s-panel s-panel--dark">
-        <div class="s-panel__orb" style="top:-20%; right:-15%;" aria-hidden="true"></div>
-        <div class="s-panel__inner">
-          <div class="reveal">
-            <div class="s-panel__eyebrow"><span class="num">01</span> · Servicio</div>
-            <h3 class="s-panel__title">Social <span class="acid">Media</span></h3>
-            <p class="s-panel__desc">Hacemos lo mismo que harías tú. Si tuvieras tiempo. Y ganas. Y criterio.</p>
-            <ul class="s-panel__list">
-              <li>Estrategia de contenidos</li>
-              <li>Gestión Instagram & TikTok</li>
-              <li>Gestión LinkedIn</li>
-              <li>Campañas Meta Ads</li>
-              <li>Campañas Google Ads</li>
-              <li>Reporting mensual</li>
-            </ul>
-            <a href="servicios.html#social" class="s-panel__cta">Saber más <span aria-hidden="true">→</span></a>
-          </div>
-          <div class="s-panel__media reveal" data-delay="120">
-            <img src="img/icon-social.png" alt="Social Media · Monje360" />
-          </div>
-        </div>
-      </article>
-
-      <!-- Panel 02 · Branding & Diseño (LIGHT / paper) -->
-      <article class="s-panel s-panel--light s-panel--reverse">
-        <div class="s-panel__inner">
-          <div class="reveal">
-            <div class="s-panel__eyebrow"><span class="num">02</span> · Servicio</div>
-            <h3 class="s-panel__title">Branding &amp; <span class="acid">Diseño</span></h3>
-            <p class="s-panel__desc">Si tu logo no significa nada, tu marca tampoco. Lo arreglamos. Y luego escribimos el manual.</p>
-            <ul class="s-panel__list">
-              <li>Naming &amp; posicionamiento</li>
-              <li>Identidad visual</li>
-              <li>Manual de marca</li>
-              <li>Dirección de arte</li>
-              <li>Diseño editorial</li>
-              <li>Web design</li>
-            </ul>
-            <a href="servicios.html#branding" class="s-panel__cta">Saber más <span aria-hidden="true">→</span></a>
-          </div>
-          <div class="s-panel__media reveal" data-delay="120">
-            <img src="img/icon-branding.png" alt="Branding &amp; Diseño · Monje360" />
-          </div>
-        </div>
-      </article>
-
-      <!-- Panel 03 · IA & Automatización (DARK + lime glow) -->
-      <article class="s-panel s-panel--dark">
-        <div class="s-panel__orb" style="bottom:-25%; left:-10%;" aria-hidden="true"></div>
-        <div class="s-panel__inner">
-          <div class="reveal">
-            <div class="s-panel__eyebrow"><span class="num">03</span> · Servicio</div>
-            <h3 class="s-panel__title">IA &amp; <span class="acid">Automatización</span></h3>
-            <p class="s-panel__desc">Tu equipo pierde 4 horas al día haciendo lo que un script de 30 líneas haría en 3 segundos.</p>
-            <ul class="s-panel__list">
-              <li>Chatbots de ventas</li>
-              <li>Funnels conversacionales</li>
-              <li>Email &amp; CRM</li>
-              <li>Workflows internos</li>
-              <li>Integraciones</li>
-              <li>Asistentes IA a medida</li>
-            </ul>
-            <a href="servicios.html#ia" class="s-panel__cta">Saber más <span aria-hidden="true">→</span></a>
-          </div>
-          <div class="s-panel__media reveal" data-delay="120">
-            <img src="img/icon-ia.png" alt="IA &amp; Automatización · Monje360" />
-          </div>
-        </div>
-      </article>
-
-      <!-- Panel 04 · Performance (ACENTO LIMA — punto final) -->
-      <article class="s-panel s-panel--accent">
-        <div class="s-panel__inner">
-          <div class="reveal">
-            <div class="s-panel__eyebrow"><span class="num">04</span> · Servicio</div>
-            <h3 class="s-panel__title">Marketing <span class="acid">Performance</span></h3>
-            <p class="s-panel__desc">Datos. De los que sirven para decidir. No de los que se enseñan al cliente para que se calle.</p>
-            <ul class="s-panel__list">
-              <li>Auditoría SEO técnico</li>
-              <li>Email marketing</li>
-              <li>CRO</li>
-              <li>Analítica</li>
-              <li>Dashboards</li>
-              <li>Contenidos SEO</li>
-            </ul>
-            <a href="servicios.html#performance" class="s-panel__cta">Saber más <span aria-hidden="true">→</span></a>
-          </div>
-        </div>
-      </article>
-
     </section>
 
     <!-- =========== CASES =========== -->
